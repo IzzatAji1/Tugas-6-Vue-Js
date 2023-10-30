@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Vue.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="calculator">
+            <input type="text" v-model="display">
+            <div class="buttons">
+                <button @click="appendToDisplay('1')">1</button>
+                <button @click="appendToDisplay('2')">2</button>
+                <button @click="appendToDisplay('3')">3</button>
+                <button @click="appendToDisplay('+')">+</button>
+                <button @click="appendToDisplay('4')">4</button>
+                <button @click="appendToDisplay('5')">5</button>
+                <button @click="appendToDisplay('6')">6</button>
+                <button @click="appendToDisplay('-')">-</button>
+                <button @click="appendToDisplay('7')">7</button>
+                <button @click="appendToDisplay('8')">8</button>
+                <button @click="appendToDisplay('9')">9</button>
+                <button @click="appendToDisplay('*')">*</button>
+                <button @click="clearDisplay">C</button>
+                <button @click="appendToDisplay('0')">0</button>
+                <button @click="calculateResult">=</button>
+                <button @click="appendToDisplay('/')">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
